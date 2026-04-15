@@ -1,6 +1,7 @@
 
 package Main;
-package ClasesDAO.EquipoDAO;
+import ClasesDAO.EquipoDAO;
+import worldcup.modelos.Equipo;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,7 +9,7 @@ public class Main {
 
         // 🔹 CREATE
         Equipo nuevo = new Equipo(0, "Guatemala", "Guatemala");
-        dao.insertar(nuevo);
+        dao.insert(nuevo);
         System.out.println("Insertado ✔");
 
         // 🔹 READ
@@ -16,7 +17,7 @@ public class Main {
         for (Equipo e : dao.obtenerTodos()) {
             System.out.println(e);
         }
-
+        
         // 🔹 UPDATE
         Equipo actualizar = new Equipo(1, "Brasil", "Brasil");
         dao.actualizar(actualizar);
