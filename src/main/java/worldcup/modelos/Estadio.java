@@ -46,7 +46,8 @@ public class Estadio {
     private String ciudad;
     private String pais;
     private int capacidad;
-
+    
+    public Estadio(){}
     public Estadio(int id, String nombre, String ciudad, String pais, int capacidad) {
         this.id = id;
         this.nombre = nombre;
